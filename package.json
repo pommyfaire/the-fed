@@ -3,9 +3,10 @@
       "start": "npm run prebuild && parcel src/index.html",
       "build": "parcel build src/index.html --public-url ./",
       "prebuild": "rimraf .parcel-cache dist",
-      "postbuild": "node delete_maps"
+      "postbuild": "node postbuild"
    },
    "devDependencies": {
+      "gh-pages": "^4.0.0",
       "parcel": "^2.6.0",
       "process": "^0.11.10",
       "rimraf": "^3.0.2"
