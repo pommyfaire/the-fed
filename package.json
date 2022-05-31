@@ -1,8 +1,9 @@
 {
    "scripts": {
       "start": "npm run prebuild && parcel src/index.html",
-      "prebuild": "rimraf dist",
-      "build": "parcel build src/index.html"
+      "build": "parcel build src/index.html --public-url ./",
+      "prebuild": "rimraf .parcel-cache dist",
+      "postbuild": "node delete_maps"
    },
    "devDependencies": {
       "parcel": "^2.6.0",
