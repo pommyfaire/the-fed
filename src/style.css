@@ -1,0 +1,16 @@
+html, body
+{ margin: 0
+; height: 100%
+; width: 100%
+; overflow: hidden
+; font-family: Consolas, monospace;
+; font-size: 16px;
+; color: wheat
+}
+
+body
+{ background-color: #334
+; display: flex
+; align-items: center
+; justify-content: center
+}
